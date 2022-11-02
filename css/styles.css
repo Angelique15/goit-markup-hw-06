@@ -1,0 +1,577 @@
+/*estilos generales*/
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray: #757575;
+  --blue: #2196f3;
+}
+
+body {
+  color: var(--black);
+  font-family: "roboto", "sans-serif";
+}
+
+header {
+  background-color: var(--white);
+  border-radius: 0px;
+  border-bottom: solid 1px #ececec;
+}
+
+li {
+  list-style: none;
+}
+
+header ul {
+  display: flex;
+}
+
+ul {
+  padding: 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: calc((80px - 48px) / 2) 0;
+}
+
+header .container :nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: #2f303a;
+  min-height: 252px;
+}
+
+footer .container {
+  display: flex;
+}
+
+.style-link.contact {
+  color: var(--gray);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 0;
+}
+
+.general-hover:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.general-hover:hover .min-icon {
+  fill: var(--blue);
+}
+/*stilos del encabezado*/
+#logo-web {
+  color: var(--blue);
+  font-size: 26px;
+  font-family: "Raleway";
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 93px;
+}
+
+.style-link {
+  color: #212121;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  background-color: var(--blue);
+  border-radius: 2px;
+  visibility: hidden;
+  margin-top: 76px;
+  transition: transform 0.5s ease;
+}
+
+.general-hover:hover.underline::after {
+  visibility: visible;
+  transform-origin: center;
+}
+.contact {
+  color: var(--gray);
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  padding-left: 0;
+}
+
+/*stilos del BG*/
+.section-1 {
+  background-color: #2f303a;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.solutions-title {
+  width: 696px;
+  height: 120px;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  font-size: 44px;
+  line-height: 60px;
+  padding-top: 200px;
+}
+
+.solutions-button {
+  width: 261px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin-left: 470px;
+  margin-top: 150px;
+}
+
+.solutions-button:hover,
+.solutions-button:focus {
+  background-color: var(--blue);
+}
+
+/*stilos de los parrafos*/
+.section-2 {
+  background-color: var(--white);
+}
+
+.paragraph {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.value {
+  color: #212121;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  height: 16px;
+  width: 270px;
+  left: 215px;
+  top: 775px;
+}
+
+.val-description {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 2.4;
+  letter-spacing: 0.03em;
+  width: 270px;
+  height: 75px;
+}
+
+/*a qué nos dedicamos estilos*/
+.title-focus {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.focus-on {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section-3.container {
+  background-color: var(--white);
+  width: 373.16px;
+  height: 323.7px;
+}
+
+/*stilos del equipo de trabajo*/
+.section-4 {
+  background-color: #f5f4fa;
+  min-height: 708px;
+}
+
+.title-team {
+  color: #212121;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.team-work {
+  background-color: #f5f4fa;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+}
+
+.professional-board {
+  background: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  min-height: 428px;
+}
+
+.professional-name {
+  width: 100%;
+  height: 19px;
+  left: 295px;
+  top: 1986px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.profession {
+  width: 100%;
+  height: 19px;
+  left: 253px;
+  top: 2015px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--gray);
+}
+
+/* estilos del footer*/
+.list-city {
+  color: var(--white);
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  width: 231px;
+  min-height: 21px;
+  font-style: normal;
+}
+
+.contact-foot {
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  width: 231px;
+  min-height: 21px;
+  font-style: normal;
+}
+/*portafolio footer*/
+.media-title {
+  color: var(--white);
+  font-size: 14px;
+  height: 16px;
+  width: 135px;
+  left: 516px;
+  top: 1703px;
+  margin-left: 156px;
+}
+/*ESTILOS DEL PORTFOLIO*/
+/*estilos de los botones*/
+.section-5 ul {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button {
+  width: 100px;
+  height: 38px;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin-right: 8px;
+  top: 186px;
+  justify-content: space-between;
+}
+
+.button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.section-6 {
+  justify-content: space-around;
+  padding-block-end: 40px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+  margin-top: -160px;
+  padding-left: 0;
+}
+
+.project-board {
+  width: 370px;
+  height: 404px;
+  box-sizing: border-box;
+  background: var(--white);
+  border: 1px solid #eeeeee;
+  flex-basis: left calc(50% - 370px / 2 - 400px);
+  flex-basis: top calc(50% - 294px / 2 + 349px);
+}
+
+.project-board:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.project-board > h3 {
+  height: 32px;
+  width: 322px;
+}
+.project-board > h4 {
+  height: 20px;
+  width: 322px;
+}
+.name-project {
+  letter-spacing: 0.06em;
+  font-size: 18px;
+  line-height: 36px;
+  color: #212121;
+  padding-left: 24px;
+  margin-bottom: 4px;
+}
+
+.description-project {
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  padding-left: 24px;
+  margin: 1px;
+}
+/*estilos de los vectores & imagen de fondo*/
+.container-fluid {
+  height: 600px;
+  background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/overlay.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.costumer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-container {
+  border: 1px #afb1b8 solid;
+  border-radius: 4px;
+  width: 170px;
+  height: 81px;
+  padding: 14px 32px;
+}
+
+.client-logo {
+  height: 52px;
+  width: 106px;
+  fill: #afb1b8;
+}
+
+.contact-icons {
+  width: 16px;
+  height: 16px;
+  fill: #afb1b8;
+  margin-right: 10px;
+}
+
+.icons-container-para {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border: 1px #f5f4fa solid;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.paragraph-icons {
+  width: 65.32px;
+  height: 70px;
+  fill: #212121;
+  margin: 25px 100px;
+}
+
+.social-team-section {
+  display: flex;
+  justify-content: center;
+}
+
+.social-team-container {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  padding: 12px;
+  background-color: var(--white);
+  fill: #afb1b8;
+}
+
+.social-team-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.social-team-container:hover {
+  background-color: var(--blue);
+  fill: var(--white);
+}
+/*iconos del footer*/
+.social-media-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+
+.media-links-container {
+  width: 206px;
+  left: 516px;
+  height: 80px;
+  margin-left: 156px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.media-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.media-link:hover {
+  background-color: var(--blue);
+}
+
+.box-drop {
+  position: relative;
+  background: rgba(33, 150, 243, 0.9);
+  width: 100%;
+}
+
+.rising-box {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  top: 0px;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(105%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 90%;
+  color: var(--white);
+  padding: 64px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.project-board:hover .rising-box {
+  transform: translateY(0);
+}
+
+.rising-window {
+  position: relative;
+  overflow: hidden;
+}
+/*estilos de la ventana modal*/
+.pop-up-modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  background: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pop-up-modal.is-hidden {
+  visibility: hidden;
+  transition: opacity 0.6s;
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  border-radius: 15px;
+  padding: 8px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 490px;
+  background: var(--white);
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+/*estilos overload de la sección 3*/
+.overload {
+  position: absolute;
+  width: 372px;
+  height: 70px;
+  top: 1435px;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--white);
+  align-content: center;
+  margin-top: 184px;
+  opacity: 80%;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 10px;
+}
