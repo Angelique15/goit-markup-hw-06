@@ -94,7 +94,7 @@ footer .container {
 .underline::after {
   content: "";
   position: absolute;
-  width: 48px;
+  width: 55px;
   height: 4px;
   background-color: var(--blue);
   border-radius: 2px;
@@ -105,7 +105,7 @@ footer .container {
 
 .general-hover:hover.underline::after {
   visibility: visible;
-  transform-origin: center;
+  transform-origin: left;
 }
 .contact {
   color: var(--gray);
@@ -291,11 +291,7 @@ footer .container {
 .media-title {
   color: var(--white);
   font-size: 14px;
-  height: 16px;
-  width: 135px;
-  left: 516px;
-  top: 1703px;
-  margin-left: 156px;
+  margin-left: 116px;
 }
 /*ESTILOS DEL PORTFOLIO*/
 /*estilos de los botones*/
@@ -470,7 +466,7 @@ footer .container {
   width: 206px;
   left: 516px;
   height: 80px;
-  margin-left: 156px;
+  margin-left: 110px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -525,6 +521,7 @@ footer .container {
   position: absolute;
   width: 528px;
   height: 581px;
+  margin: -260px 686px;
   background: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -558,20 +555,35 @@ footer .container {
   flex-direction: row-reverse;
   cursor: pointer;
 }
-/*estilos overload de la sección 3*/
-.overload {
-  position: absolute;
-  width: 372px;
-  height: 70px;
-  top: 1435px;
-  background: rgba(47, 48, 58, 0.8);
+.send-section {
+  margin-left: 78px;
+}
+.form-element {
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.foot-button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  margin-left: 12px;
+  text-align: center;
   color: var(--white);
-  align-content: center;
-  margin-top: 184px;
-  opacity: 80%;
+  cursor: pointer;
+}
+.subscribe-title {
+  width: 275px;
+  height: 16px;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 10px;
+  color: var(--white);
 }
