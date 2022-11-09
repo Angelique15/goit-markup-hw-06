@@ -49,6 +49,24 @@ footer .container {
   display: flex;
 }
 
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+  color: var(--gray);
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+input,
+textarea {
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 10px 10px;
+}
+
 .style-link.contact {
   color: var(--gray);
 }
@@ -516,9 +534,24 @@ footer .container {
   position: relative;
   overflow: hidden;
 }
+
+.overload {
+  position: absolute;
+  width: 372px;
+  height: 70px;
+  top: 1435px;
+  margin-top: 185px;
+  background: rgba(47, 48, 58, 0.8);
+  opacity: 80%;
+  color: var(--white);
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+}
 /*estilos de la ventana modal*/
 .pop-up-modal {
-  position: absolute;
+  z-index: 1;
+  position: fixed;
   width: 528px;
   height: 581px;
   margin: -260px 686px;
@@ -543,6 +576,13 @@ footer .container {
   padding: 8px;
   position: relative;
 }
+.form-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
 .close-button {
   position: absolute;
@@ -557,8 +597,13 @@ footer .container {
 }
 .send-section {
   margin-left: 78px;
+  display: flex;
+  margin-left: 40px;
+  display: flex;
 }
+
 .form-element {
+  display: flex;
   width: 358px;
   height: 50px;
   background-color: #2f303a;
@@ -574,10 +619,10 @@ footer .container {
   border-radius: 4px;
   outline: none;
   border: none;
-  margin-left: 12px;
-  text-align: center;
   color: var(--white);
   cursor: pointer;
+  margin-left: 0;
+  margin-top: 43px;
 }
 .subscribe-title {
   width: 275px;
@@ -586,4 +631,24 @@ footer .container {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: var(--white);
+}
+/*estilos de los iconos de la ventana modal*/
+.modal-icons {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+.check {
+  margin-left: 52px;
+  margin-top: 5px;
+}
+.form-paragraph {
+  font-size: 14px;
+  line-height: 24px;
+  width: 400.62px;
+  margin-left: 76px;
+  height: 24px;
+  color: var(--gray);
 }

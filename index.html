@@ -61,6 +61,45 @@
                 <div class="pop-up-modal is-hidden" data-modal>
                     <div class="modal">
                         <button class="close-button" type="button" data-modal-close>X</button>
+                        <h3 class="form-text">Deje sus datos, nos contactaremos con usted</h3>
+                        <form>
+                            <label>
+                                Nombre
+                                <input type="text" name="name" autofocus>
+                                <svg class="modal-icons">
+                                    <use href="./images/symbol-defs.svg#icon-person"></use>
+                                </svg>
+
+                            </label>
+                            <label>
+                                Teléfono
+                                <input type="tel" name="phone_number" autofocus />
+                                <svg class="modal-icons">
+                                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                                </svg>
+                            </label>
+                            <label>
+                                E-mail
+                                <input type="email" name="email">
+                                <svg class="modal-icons">
+                                    <use href="./images/symbol-defs.svg#icon-mail-modal"></use>
+                                </svg>
+                            </label>
+                            <label>
+                                Comentarios
+                                <textarea rows="5" placeholder="Introduzca el texto"></textarea>
+                            </label>
+                            <div>
+                                <svg class="modal-icons check">
+                                    <use href="./images/symbol-defs.svg#icon-modal-check"></use>
+                                </svg>
+                                <p class="form-paragraph">
+                                    Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+                                </p>
+                                <button type="submit" class="foot-button">Enviar</button>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -126,12 +165,21 @@
                 <ul class="focus-on">
                     <li><img class="imagen" src="images/pt01.jpg" alt=" Oficina de desarrollo WEB con teclado y mesa"
                             width="373" height="323">
+                        <div class="overload">
+                            <p>APLICACIONES DE ESCRITORIO</p>
+                        </div>
                     </li>
                     <li><img class="imagen" src="images/pt02.jpg" alt="Oficina de desarrollo web movil" width="373"
                             height="323">
+                        <div class="overload">
+                            <p>APLICACIONES MÓVILES</p>
+                        </div>
                     </li>
                     <li><img class="imagen" src="images/pt03.jpg" alt="Oficina de desarrollo y diseño web" width="373"
                             height="323">
+                        <div class="overload">
+                            <p class>SOLUCIONES DE DISEÑO</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -338,16 +386,18 @@
                     </div>
                 </ul>
             </div>
-            <div class="send-section">
-                <h3 class="subscribe-title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
-                <label>
-                    <input class="form-element" type="email" name="email" placeholder="Correo electrónico" />
-                </label>
-                <button type="enviar" class="foot-button">Suscríbase
-                    <svg class="social-media-icon">
-                        <use href="./images/symbol-send.svg#icon-send"></use>
-                    </svg>
-                </button>
+            <div>
+                <form class="send-section">
+                    <label class="send-section">
+                        <h3 class="subscribe-title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
+                        <input class="form-element" type="email" name="email" placeholder="Correo electrónico" />
+                    </label>
+                    <button type="submit" class="foot-button">Suscríbase
+                        <svg class="social-media-icon">
+                            <use href="./images/symbol-send.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
     </footer>
     <!--etiqueta modal script -->
