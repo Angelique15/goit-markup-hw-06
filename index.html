@@ -65,39 +65,42 @@
                         <form>
                             <label>
                                 Nombre
-                                <input type="text" name="name" autofocus>
-                                <svg class="modal-icons">
+                                <input class="general-hover form-imput" type="text" name="name" autofocus><svg
+                                    class="modal-icons general-hover">
                                     <use href="./images/symbol-defs.svg#icon-person"></use>
                                 </svg>
-
                             </label>
                             <label>
                                 Teléfono
-                                <input type="tel" name="phone_number" autofocus />
+                                <input class="general-hover form-imput" type="tel" name="phone_number" autofocus />
                                 <svg class="modal-icons">
                                     <use href="./images/symbol-defs.svg#icon-phone"></use>
                                 </svg>
                             </label>
                             <label>
                                 E-mail
-                                <input type="email" name="email">
+                                <input class="general-hover form-imput" type="email" name="email">
                                 <svg class="modal-icons">
                                     <use href="./images/symbol-defs.svg#icon-mail-modal"></use>
                                 </svg>
                             </label>
                             <label>
                                 Comentarios
-                                <textarea rows="5" placeholder="Introduzca el texto"></textarea>
+                                <textarea class="general-hover" rows="5" placeholder="Introduzca el texto"></textarea>
                             </label>
-                            <div>
-                                <svg class="modal-icons check">
-                                    <use href="./images/symbol-defs.svg#icon-modal-check"></use>
-                                </svg>
+                            <label class="check-mark">
+                                <input type="checkbox" name="accept-terms" required hidden>
+                                <span class="modal-icons">
+                                    <svg class="check">
+                                        <use href="./images/icons.svg#check-icon"></use>
+                                    </svg>
+                                </span>
                                 <p class="form-paragraph">
                                     Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
                                 </p>
-                                <button type="submit" class="foot-button">Enviar</button>
-                            </div>
+                            </label>
+                            <button type="submit" class="foot-button modal-button">Enviar</button>
+
                         </form>
 
                     </div>
