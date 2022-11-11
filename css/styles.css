@@ -638,10 +638,6 @@ textarea {
   color: var(--white);
 }
 /*estilos de los iconos de la ventana modal*/
-.form-imput {
-  padding-left: 35px;
-  outline: none;
-}
 .modal-icons {
   position: absolute;
   width: 12px;
@@ -652,14 +648,12 @@ textarea {
 .check {
   width: 16px;
   height: 15px;
-  fill: var(--white);
+  fill: none;
   border: 2px solid #212121;
+  border-radius: 2px;
   padding: 2px;
 }
-.check:hover {
-  background-color: var(--blue);
-  border: none;
-}
+
 .form-paragraph {
   font-size: 14px;
   line-height: 24px;
@@ -675,12 +669,14 @@ textarea {
 }
 
 .general-hover:hover + .modal-icons,
-.general-hover:focus + form-imput + .modal-icons {
+.general-hover:focus + .modal-icons {
   fill: var(--blue);
   border: var(--blue);
 }
 
-.check-markinput[type="checkbox"]:checked + .modal-icons + .check {
+input:checked + .modal-icons .check {
   border-color: var(--blue);
+  background-color: var(--blue);
   fill: var(--white);
+  border: none;
 }
